@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechVista | Computers, Phones & Accessories</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./fontawesome-free-7.3.1-web/css/all.css" />
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+      <a href="./index-1.html" class="logo">
+        <img
+          class="logo-icon"
+          src="./img/techvista-logo-v2-dark-bg.png"
+          alt=""
+        />
+      </a>
+
+      <nav class="nav-links">
+        <a href="./index-1.html" class="active">Home</a>
+        <a href="./shop.html">Shop</a>
+        <a href="./About.html">About</a>
+        <a href="./contact.html">Contact</a>
+        <!-- <a href="./admin2.html">Admin</a> -->
+      </nav>
+
+      <div class="nav-icons">
+        <a href="" aria-label="Search">⌕</a>
+        <a href="./signin.html" aria-label="Account">♙</a>
+        <a href="./cart3.html" aria-label="Shopping cart">🛒<sup>0</sup></a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">YOUR ONE-STOP TECH STORE</p>
+
+        <h1>
+          Better Devices.<br />
+          <span>Bigger Possibilities.</span>
+        </h1>
+
+        <p class="hero-description">
+          Get the latest laptops, smartphones and accessories at great prices.
+          Quality products. Reliable service.
+        </p>
+
+        <a href="./shop.html" class="shop-button"> Shop Now <span>→</span> </a>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="shop">
+      <div class="section-heading">
+        <h2>Shop by Category</h2>
+        <p>Find what you need, all in one place.</p>
+      </div>
+
+      <div class="category-grid">
+        <a href="./laptop.html" class="category-card computers">
+          <div class="animation-image">
+            <img src="./img/laptop.jpg" alt="Laptop computer" />
+          </div>
+          <h3>Computers &amp; Laptops</h3>
+          <span class="category-arrow">→</span>
+        </a>
+
+        <a href="./Smartphones.html" class="category-card phones">
+          <div class="category-image">
+            <img src="./img/samsug.jpg" alt="Smartphone" />
+          </div>
+          <h3>Phones &amp; Tablets</h3>
+          <span class="category-arrow">→</span>
+        </a>
+
+        <a href="./accessories.html" class="category-card accessories">
+          <div class="category-image">
+            <img src="./img/charger.jpg" alt="Phone charger and accessories" />
+          </div>
+          <h3>Accessories</h3>
+          <span class="category-arrow">→</span>
+        </a>
+
+        <a href="./shop.html#products" class="category-card deals">
+          <div class="category-image">
+            <img src="./img/headphone1.jpg" alt="Wireless headphones" />
+          </div>
+          <h3>Best Deals</h3>
+          <span class="category-arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured" id="featured-products">
+      <div class="section-heading">
+        <h2>Featured Products</h2>
+        <p>Discover some of our popular tech picks.</p>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <img src="./img/system.jpg" alt="Laptop" />
+          <div class="product-info">
+            <p class="product-category">Computers</p>
+            <h3>Everyday Laptop</h3>
+            <p class="price">₦850,000</p>
+            <a href="#product-laptop" class="product-button">View Product</a>
+          </div>
+        </article>
+
+        <article class="product-card" id="phones">
+          <img src="./img/samsug.jpg" alt="Smartphone" />
+          <div class="product-info">
+            <p class="product-category">Mobile Phones</p>
+            <h3>Premium Smartphone</h3>
+            <p class="price">₦650,000</p>
+            <a href="#product-smartphone" class="product-button"
+              >View Product</a
+            >
+          </div>
+        </article>
+
+        <article class="product-card" id="accessories">
+          <img src="./img/headphone1.jpg" alt="Headphones" />
+          <div class="product-info">
+            <p class="product-category">Accessories</p>
+            <h3>Wireless Headphones</h3>
+            <p class="price">₦75,000</p>
+            <a href="#product-wireless-headphones" class="product-button"
+              >View Product</a
+            >
+          </div>
+        </article>
+
+        <article class="product-card" id="deals">
+          <img src="./img/images (7).jpeg" alt="Headphones" />
+          <div class="product-info">
+            <p class="product-category">Special Offers</p>
+            <h3>Everyday SmartWatch</h3>
+            <p class="price">₦45,000</p>
+            <a href="#product-everyday-headphones" class="product-button"
+              >View Product</a
+            >
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CSS-only product detail popups -->
+    <section
+      class="product-modal"
+      id="product-laptop"
+      aria-label="Everyday Laptop details"
+    >
+      <a
+        href="#featured-products"
+        class="product-modal-backdrop"
+        aria-label="Close product details"
+      ></a>
+      <div
+        class="product-modal-content"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="laptop-modal-title"
+      >
+        <a
+          href="#featured-products"
+          class="product-modal-close"
+          aria-label="Close product details"
+          >&times;</a
+        >
+        <img src="./img/system.jpg" alt="Everyday Laptop" />
+        <div class="product-modal-info">
+          <p class="product-category">Computers</p>
+          <h2 id="laptop-modal-title">Everyday Laptop</h2>
+          <p class="price">₦850,000</p>
+          <p>A reliable laptop for school, work and everyday browsing.</p>
+
+          <ul class="specs">
+            <li><i class="fa-solid fa-circle-check"></i> 14-inch Full HD display</li>
+            <li><i class="fa-solid fa-circle-check"></i> 8GB RAM and 256GB SSD storage</li>
+            <li><i class="fa-solid fa-circle-check"></i> Up to 8 hours of battery life</li>
+          </ul>
+
+          <a href="./laptop.html#products" class="product-modal-link"
+            >Explore laptops</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="product-modal"
+      id="product-smartphone"
+      aria-label="Premium Smartphone details"
+    >
+      <a
+        href="#featured-products"
+        class="product-modal-backdrop"
+        aria-label="Close product details"
+      ></a>
+      <div
+        class="product-modal-content"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="smartphone-modal-title"
+      >
+        <a
+          href="#featured-products"
+          class="product-modal-close"
+          aria-label="Close product details"
+          >&times;</a
+        >
+        <img src="./img/samsug.jpg" alt="Premium Smartphone" />
+        <div class="product-modal-info">
+          <p class="product-category">Mobile Phones</p>
+          <h2 id="smartphone-modal-title">Premium Smartphone</h2>
+          <p class="price">₦650,000</p>
+          <p>A powerful smartphone with a bright screen and a sharp camera.</p>
+          <ul class="specs">
+            <li><i class="fa-solid fa-circle-check"></i> 6.7-inch AMOLED display</li>
+            <li><i class="fa-solid fa-circle-check"></i> 128GB storage and 8GB RAM</li>
+            <li><i class="fa-solid fa-circle-check"></i> 50MP main camera with fast charging</li>
+          </ul>
+          <a href="./Smartphones.html#products" class="product-modal-link"
+            >Explore smartphones</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="product-modal"
+      id="product-wireless-headphones"
+      aria-label="Wireless Headphones details"
+    >
+      <a
+        href="#featured-products"
+        class="product-modal-backdrop"
+        aria-label="Close product details"
+      ></a>
+      <div
+        class="product-modal-content"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="wireless-headphones-modal-title"
+      >
+        <a
+          href="#featured-products"
+          class="product-modal-close"
+          aria-label="Close product details"
+          >&times;</a
+        >
+        <img src="./img/headphone1.jpg" alt="Wireless Headphones" />
+        <div class="product-modal-info">
+          <p class="product-category">Accessories</p>
+          <h2 id="wireless-headphones-modal-title">Wireless Headphones</h2>
+          <p class="price">₦75,000</p>
+          <p>
+            Wireless headphones with rich sound for music, calls and movies.
+          </p>
+
+          <ul class="specs">
+            <li><i class="fa-solid fa-circle-check"></i> Bluetooth wireless connection</li>
+            <li><i class="fa-solid fa-circle-check"></i> Up to 30 hours of battery life</li>
+            <li><i class="fa-solid fa-circle-check"></i> Noise cancelling with built-in microphone</li>
+          </ul>
+
+          <a href="./headphones.html#products" class="product-modal-link"
+            >Explore headphones</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="product-modal"
+      id="product-everyday-headphones"
+      aria-label="Everyday Headphones details"
+    >
+      <a
+        href="#featured-products"
+        class="product-modal-backdrop"
+        aria-label="Close product details"
+      ></a>
+      <div
+        class="product-modal-content"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="everyday-headphones-modal-title"
+      >
+        <a
+          href="#featured-products"
+          class="product-modal-close"
+          aria-label="Close product details"
+          >&times;</a
+        >
+        <img src="./img/images (7).jpeg" alt="Everyday Headphones" />
+        <div class="product-modal-info">
+          <p class="product-category">Special Offers</p>
+          <h2 id="everyday-headphones-modal-title">Everyday SmartWatch</h2>
+          <p class="price">₦45,000</p>
+          <p>
+            Comfortable headphones at a special offer price for everyday
+            listening.
+          </p>
+          <ul class="specs">
+            <li><i class="fa-solid fa-circle-check"></i> Lightweight over-hand design</li>
+            <li><i class="fa-solid fa-circle-check"></i> Up to 20 hours of battery life</li>
+            <li><i class="fa-solid fa-circle-check"></i> Foldable, with a carry pouch</li>
+          </ul>
+          <a href="./headphones.html#products" class="product-modal-link"
+            >Explore headphones</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="big">
+      <div class="big-image">
+        <img
+          src="./img/a_clean_high_resolution_product_render_style_3d_p.jpg"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <h2>Technology Made Simple</h2>
+      <p>
+        At TechVista, we make it easier to find computers, phones and
+        accessories that fit your lifestyle and budget. Shop confidently and
+        discover your next favourite device.
+      </p>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <h2>Stay Updated</h2>
+      <p>Get updates on new arrivals, tech products and special deals.</p>
+
+      <form class="newsletter-form">
+        <input
+          type="email"
+          placeholder="Enter your email address"
+          aria-label="Email address"
+          required
+        />
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2>Tech<span>Vista</span></h2>
+          <p>Your one-stop store for computers, phones and accessories.</p>
+        </div>
+
+        <div>
+          <h3>Quick Links</h3>
+          <a href="./index-1.html">Home</a>
+          <a href="./shop.html">Shop</a>
+          <a href="./About.html">About Us</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./admin/admin2.html">Admin</a>
+        </div>
+
+        <div>
+          <h3>Categories</h3>
+          <a href="./laptop.html">Computers &amp; Laptops</a>
+          <a href="./Smartphones.html">Phones &amp; Tablets</a>
+          <a href="./accessories.html">Accessories</a>
+          <a href="./shop.html#products">Best Deals</a>
+        </div>
+
+        <div class="contact-info">
+          <h3>Contact Us</h3>
+
+          <p>
+            <i class="fa-solid fa-envelope"></i>
+            Email: hello@techvista.example
+          </p>
+
+          <p>
+            <i class="fa-solid fa-phone"></i>
+            Phone: +234 800 000 0000
+          </p>
+
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            Nigeria
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 TechVista. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

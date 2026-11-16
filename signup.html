@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101923" />
+    <title>Create an account | TechVista</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/signup.css" />
+    <link rel="stylesheet" href="./fontawesome-free-7.3.1-web/css/all.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <a href="./index-1.html" class="logo">
+        <img
+          class="logo-icon"
+          src="./img/techvista-logo-v2-dark-bg.png"
+          alt=""
+        />
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="./index-1.html">Home</a>
+        <a href="./shop.html">Shop</a>
+        <a href="./About.html">About</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-icons">
+        <a href="" aria-label="Search">⌕</a>
+        <a href="./signin.html" aria-label="Account">♙</a>
+        <a href="./cart3.html" aria-label="Shopping cart">🛒<sup>0</sup></a>
+      </div>
+    </header>
+
+    <main class="signup-main">
+      <section class="signup-card" aria-labelledby="signup-title">
+        <aside class="welcome-panel">
+          <p class="panel-kicker">New here?</p>
+          <h1>Join the TechVista family.</h1>
+          <p class="panel-copy">
+            Create an account to pick up where you left off, anytime.
+          </p>
+          <ul class="benefits">
+            <li><i class="fa-solid fa-circle-check"></i> Keep track of your orders</li>
+            <li><i class="fa-solid fa-circle-check"></i> Save products for later</li>
+            <li><i class="fa-solid fa-circle-check"></i> Check out a little faster</li>
+          </ul>
+        </aside>
+
+        <div class="form-panel">
+          <div class="form-heading">
+            <p class="eyebrow">YOUR TECHVISTA ACCOUNT</p>
+            <h2 id="signup-title">Create your account</h2>
+            <p>It only takes a minute.</p>
+          </div>
+
+          <form class="signup-form" action="#" method="post">
+            <div class="field">
+              <label for="full-name">Full name</label>
+              <input
+                id="full-name"
+                name="full-name"
+                type="text"
+                autocomplete="name"
+                placeholder="enter your full name"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <label for="email">Email address</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="enter your email"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <label for="phone">Phone number</label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                autocomplete="tel"
+                placeholder="enter your phone number"
+                required
+              />
+            </div>
+
+            <div class="password-fields">
+              <div class="field">
+                <label for="password">Password</label>
+                <input
+                  id="password"
+                  name="password"
+                  type="password"
+                  autocomplete="new-password"
+                  placeholder="create a password"
+                  minlength="8"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="confirm-password">Confirm password</label>
+                <input
+                  id="confirm-password"
+                  name="confirm-password"
+                  type="password"
+                  autocomplete="new-password"
+                  placeholder="repeat your password"
+                  minlength="8"
+                  required
+                />
+              </div>
+            </div>
+            <p class="password-hint">At least 8 characters.</p>
+
+            <label class="terms-option">
+              <input type="checkbox" name="terms" required />
+              <span>
+                I agree to the <a href="#terms">Terms</a> and
+                <a href="#privacy">Privacy Policy</a>
+              </span>
+            </label>
+
+            <button class="primary-button" type="submit">Create account</button>
+          </form>
+
+          <div class="separator"><span>or sign up with</span></div>
+          <div class="social-options" aria-label="Other sign-up options">
+            <button type="button" class="social-button"><i class="fa-brands fa-google"></i></button>
+            <button type="button" class="social-button"><i class="fa-brands fa-apple"></i></button>
+          </div>
+
+          <p class="register-prompt">
+            Already have an account? <a href="./signin.html">Sign in</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2>Tech<span>Vista</span></h2>
+          <p>Your one-stop store for computers, phones and accessories.</p>
+        </div>
+
+        <div>
+          <h3>Quick Links</h3>
+          <a href="./index-1.html">Home</a>
+          <a href="./shop.html">Shop</a>
+          <a href="./About.html">About Us</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./admin/admin2.html">Admin</a>
+        </div>
+
+        <div>
+          <h3>Categories</h3>
+          <a href="./laptop.html">Computers &amp; Laptops</a>
+          <a href="./Smartphones.html">Phones &amp; Tablets</a>
+          <a href="./accessories.html">Accessories</a>
+          <a href="./shop.html#products">Best Deals</a>
+        </div>
+
+        <div class="contact-info">
+          <h3>Contact Us</h3>
+          <p><i class="fa-solid fa-envelope"></i> Email: hello@techvista.example</p>
+          <p><i class="fa-solid fa-phone"></i> Phone: +234 800 000 0000</p>
+          <p><i class="fa-solid fa-location-dot"></i> Nigeria</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 TechVista. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechVista - Orders Management</title>
+    <link rel="stylesheet" href="../css/order.css">
+</head>
+
+<body>
+
+    <div class="admin-container">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>Tech<span>Vista</span></h2>
+                <p>ADMIN PANEL</p>
+            </div>
+
+            <nav>
+                <a href="./admin2.html">Dashboard</a>
+                <a href="./product.html">Add Product</a>
+                <a href="./mproduct.html">Manage Products</a>
+                <a href="./order.html" class="active">Orders</a>
+                <a href="#">Settings</a>
+                <a href="../index-1.html">Visit Store</a>
+                <a href="../index-1.html">Home</a>
+                <a href="../cart3.html">Shop</a>
+                <a href="../About.html">About</a>
+                <a href="../contact.html">Contact</a>
+            </nav>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <header class="topbar">
+                <div>
+                    <h2>Orders Management</h2>
+                    <p>View and manage customer orders here.</p>
+                </div>
+
+                <div class="admin-profile">
+                    <div class="profile-icon">A</div>
+                    <div>
+                        <strong>Administrator</strong>
+                        <small>Store Manager</small>
+                    </div>
+                </div>
+            </header>
+
+            <!-- ORDER SUMMARY -->
+            <section class="summary-cards">
+
+                <div class="summary-card">
+                    <p>Total Orders</p>
+                    <h2>245</h2>
+                    <small>All customer orders</small>
+                </div>
+
+                <div class="summary-card">
+                    <p>Pending Orders</p>
+                    <h2>32</h2>
+                    <small>Awaiting processing</small>
+                </div>
+
+                <div class="summary-card">
+                    <p>Completed Orders</p>
+                    <h2>180</h2>
+                    <small>Successfully delivered</small>
+                </div>
+
+                <div class="summary-card">
+                    <p>Cancelled Orders</p>
+                    <h2>33</h2>
+                    <small>Cancelled purchases</small>
+                </div>
+
+            </section>
+
+            <!-- ORDERS TABLE -->
+            <section class="orders-section">
+
+                <div class="section-heading">
+                    <div>
+                        <h2>All Orders</h2>
+                        <p>Manage and track customer purchases.</p>
+                    </div>
+
+                    <button class="export-btn" onclick="window.print()">
+                        Print Orders
+                    </button>
+                </div>
+
+                <!-- SEARCH AND FILTER -->
+                <div class="filter-area">
+
+                    <input type="search" placeholder="Search order or customer...">
+
+                    <select>
+                        <option>All Orders</option>
+                        <option>Pending</option>
+                        <option>Processing</option>
+                        <option>Delivered</option>
+                        <option>Cancelled</option>
+                    </select>
+
+                    <select>
+                        <option>All Payments</option>
+                        <option>Paid</option>
+                        <option>Unpaid</option>
+                    </select>
+
+                </div>
+
+                <div class="table-container">
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Customer</th>
+                                <th>Product</th>
+                                <th>Date</th>
+                                <th>Amount</th>
+                                <th>Payment</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>#TV001</td>
+                                <td>John Peter</td>
+                                <td>HP EliteBook 840</td>
+                                <td>04 Nov 2026</td>
+                                <td>₦450,000</td>
+                                <td><span class="paid">Paid</span></td>
+                                <td><span class="processing">Processing</span></td>
+                                <td><button class="view-btn">View</button></td>
+                            </tr>
+
+                            <tr>
+                                <td>#TV002</td>
+                                <td>Mary James</td>
+                                <td>iPhone 13</td>
+                                <td>03 Nov 2026</td>
+                                <td>₦650,000</td>
+                                <td><span class="paid">Paid</span></td>
+                                <td><span class="delivered">Delivered</span></td>
+                                <td><button class="view-btn">View</button></td>
+                            </tr>
+
+                            <tr>
+                                <td>#TV003</td>
+                                <td>David Mark</td>
+                                <td>Wireless Headset</td>
+                                <td>02 Nov 2026</td>
+                                <td>₦35,000</td>
+                                <td><span class="unpaid">Unpaid</span></td>
+                                <td><span class="pending">Pending</span></td>
+                                <td><button class="view-btn">View</button></td>
+                            </tr>
+
+                            <tr>
+                                <td>#TV004</td>
+                                <td>Sarah John</td>
+                                <td>Samsung Galaxy S23</td>
+                                <td>01 Nov 2026</td>
+                                <td>₦780,000</td>
+                                <td><span class="paid">Paid</span></td>
+                                <td><span class="delivered">Delivered</span></td>
+                                <td><button class="view-btn">View</button></td>
+                            </tr>
+
+                            <tr>
+                                <td>#TV005</td>
+                                <td>Michael Obi</td>
+                                <td>Bluetooth Speaker</td>
+                                <td>31 Oct 2026</td>
+                                <td>₦55,000</td>
+                                <td><span class="paid">Paid</span></td>
+                                <td><span class="cancelled">Cancelled</span></td>
+                                <td><button class="view-btn">View</button></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechVista Admin Dashboard</title>
+    <link rel="stylesheet" href="../css/mproduct.css">
+
+
+
+</head>
+
+<body>
+
+
+
+
+    <div class="admin-container">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="admin-logo">
+                <!-- <span class="logo-icon">🛒</span> -->
+                <h2>Tech<span>Vista</span></h2>
+                <p>ADMIN PANEL</p>
+            </div>
+
+            <ul class="sidebar-menu">
+
+                <li >
+                    <a href="./admin2.html">Dashboard</a>
+                </li>
+
+                <li>
+                    <a href="./product.html">Add Product</a>
+                </li>
+
+                <li class="active">
+                    <a href="./mproduct.html" class="active">Manage Products</a>
+                </li>
+
+                <li>
+                    <a href="./order.html">Orders</a>
+                </li>
+
+                <li>
+                    <a href="#settings">Settings</a>
+                </li>
+
+                <li>
+                    <a href="../index-1.html">Visit Store</a>
+                </li>
+
+                <li>
+                    <a href="../index-1.html" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="../cart3.html">Shop</a>
+                </li>
+                <li>
+                    <a href="../About.html">About</a>
+                </li>
+                <li>
+                    <a href="../contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="./admin2.html">Admin</a>
+                </li>
+
+            </ul>
+
+            <div class="logout">
+                <a href="../index-1.html">Logout</a>
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="admin-main">
+
+            <!-- TOP HEADER -->
+            <header class="admin-header">
+
+                <div>
+                    <h1>Admin Dashboard</h1>
+                    <p>Manage your store and products here.</p>
+                </div>
+
+                <div class="admin-profile">
+                    <div class="profile-icon">A</div>
+                    <div>
+                        <h4>Administrator</h4>
+                        <p>Store Manager</p>
+                    </div>
+                </div>
+
+            </header>
+
+
+            
+
+
+          
+
+
+            <!-- MANAGE PRODUCTS -->
+            <section class="manage-products" id="products">
+
+                <div class="section-heading">
+                    <h2>Manage Products</h2>
+                    <p>View and manage products in your store.</p>
+                </div>
+
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>Product Name</th>
+                                <th>Category</th>
+                                <th>Price</th>
+                                <th>Stock</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>
+                                    <img src="../img/laptop.jpg" alt="Laptop">
+                                </td>
+
+                                <td>HP EliteBook</td>
+                                <td>Laptops</td>
+                                <td>₦450,000</td>
+                                <td>12</td>
+
+                                <td>
+                                    <button class="edit-btn">
+                                        Edit
+                                    </button>
+
+                                    <button class="delete-btn">
+                                        Delete
+                                    </button>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <img src="../img/a_clean_product_render_style_image_on_a_transparen.jpg" alt="iPhone">
+                                </td>
+
+                                <td>iPhone 15 Pro</td>
+                                <td>Smartphones</td>
+                                <td>₦1,200,000</td>
+                                <td>8</td>
+
+                                <td>
+                                    <button class="edit-btn">
+                                        Edit
+                                    </button>
+
+                                    <button class="delete-btn">
+                                        Delete
+                                    </button>
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101923" />
+    <title>Checkout | TechVista</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/checkout.css" />
+    <link rel="stylesheet" href="./fontawesome-free-7.3.1-web/css/all.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <a href="./index-1.html" class="logo">
+        <img
+          class="logo-icon"
+          src="./img/techvista-logo-v2-dark-bg.png"
+          alt=""
+        />
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="./index-1.html">Home</a>
+        <a href="./shop.html">Shop</a>
+        <a href="./About.html">About</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-icons">
+        <a href="" aria-label="Search">⌕</a>
+        <a href="./signin.html" aria-label="Your account">♙</a>
+        <a href="./checkout.html" aria-label="Shopping cart">🛒<sup>0</sup></a>
+      </div>
+    </header>
+
+    <div class="checkout-page">
+      <div class="checkout-heading">
+        <div>
+          <p class="eyebrow">Almost there</p>
+          <h1>Checkout</h1>
+        </div>
+        <a class="back-to-cart" href="./shop.html"><i class="fa-solid fa-circle-arrow-left"></i> Continue shopping</a>
+      </div>
+
+      <ol class="progress-steps" aria-label="Checkout progress">
+        <li class="step-complete"><span>1</span> Cart</li>
+        <li class="step-current" aria-current="step"><span>2</span> Checkout</li>
+        <li><span>3</span> Confirmation</li>
+      </ol>
+
+      <div class="checkout-layout">
+        <form class="checkout-form" id="checkout-form" action="#" method="post">
+          <section class="form-section" aria-labelledby="contact-title">
+            <div class="section-title">
+              <span class="section-number">1</span>
+              <div>
+                <h2 class="contact-title">Contact details</h2>
+                <p>Where should we send your order updates?</p>
+              </div>
+            </div>
+
+            <div class="field-grid two-columns">
+              <div class="checkout-field">
+                <label for="checkout-email">Email address</label>
+                <input type="email" autocomplete="off" placeholder="enter your email">
+              </div>
+              <div class="checkout-field">
+                <label for="phone">Phone number</label>
+                <input type="tel" placeholder="enter your phone number" />
+              </div>
+            </div>
+          </section>
+
+          <section class="form-section" aria-labelledby="delivery-title">
+            <div class="section-title">
+              <span class="section-number">2</span>
+              <div>
+                <h2 id="delivery-title">Delivery address</h2>
+                <p>Enter the address where you’d like your order delivered.</p>
+              </div>
+            </div>
+
+            <div class="checkout-field">
+              <label for="full-name">Full name</label>
+              <input type="text" id="full-name" name="full-name" placeholder="Name on the delivery" required />
+            </div>
+            <div class="checkout-field">
+              <label for="address">Street address</label>
+              <input type="text" id="address" name="address" placeholder="House number and street" required />
+            </div>
+            <div class="field-grid three-columns">
+              <div class="checkout-field">
+                <label for="city">City</label>
+                <input type="text" required />
+              </div>
+              <div class="checkout-field">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" required />
+              </div>
+              <div class="checkout-field">
+                <label for="postcode">Postcode</label>
+                <input type="text" id="postcode" name="postcode"  />
+              </div>
+            </div>
+          </section>
+
+          <div class="form-section choice-section">
+            <div class="section-title">
+              <span class="section-number">3</span>
+              <span>
+                <strong>Delivery method</strong>
+                <small>Choose the option that works for you.</small>
+              </span>
+            </div>
+
+            <label class="choice-card">
+              <input type="radio" name="delivery" value="standard" checked />
+              <span class="choice-content">
+                <span class="choice-name">Standard delivery</span>
+                <span class="choice-note">3–5 business days</span>
+              </span>
+              <span class="choice-price">₦5,000</span>
+            </label>
+            <label class="choice-card">
+              <input type="radio" name="delivery" value="express" />
+              <span class="choice-content">
+                <span class="choice-name">Express delivery</span>
+                <span class="choice-note">1–2 business days</span>
+              </span>
+              <span class="choice-price">₦12,000</span>
+            </label>
+          </div>
+
+          <div class="form-section choice-section">
+            <div class="section-title">
+              <span class="section-number">4</span>
+              <span>
+                <strong>Payment</strong>
+                <small>All payments are processed securely.</small>
+              </span>
+            </div>
+
+            <label class="choice-card payment-choice">
+              <input type="radio" name="payment" value="card" checked />
+              <span class="choice-content">
+                <span class="choice-name">Debit or credit card</span>
+                <span class="choice-note">Visa, Mastercard and Verve</span>
+              </span>
+            </label>
+            <div class="field-grid card-fields">
+              <div class="checkout-field full-width">
+                <label for="card-number">Card number</label>
+                <input type="text" id="card-number" name="card-number" inputmode="numeric" autocomplete="cc-number" placeholder="0000 0000 0000 0000" />
+              </div>
+              <div class="checkout-field">
+                <label for="expiry">Expiry date</label>
+                <input type="text" id="expiry" name="expiry" autocomplete="cc-exp" placeholder="MM / YY" />
+              </div>
+              <div class="checkout-field">
+                <label for="security-code">Security code</label>
+                <input type="password" id="security-code" name="security-code" inputmode="numeric" autocomplete="cc-csc" placeholder="CVV" />
+              </div>
+            </div>
+            <label class="choice-card payment-choice">
+              <input type="radio" name="payment" value="transfer" />
+              <span class="choice-content">
+                <span class="choice-name">Bank transfer</span>
+                <span class="choice-note">You’ll receive payment details after placing your order.</span>
+              </span>
+            </label>
+          </div>
+        </form>
+
+        <div class="order-summary" aria-labelledby="summary-title">
+          <h2 id="summary-title">Order summary <span>0 items</span></h2>
+
+          <div class="order-items">
+            <article class="order-item">
+              <!-- <div class="product-image laptop-image">
+                <img src="./img/laptop.jpg" alt="" />
+              </div> -->
+              <div class="product-details">
+                <!-- <h3>Everyday Laptop</h3>
+                <p>Computers · Qty 1</p> -->
+              </div>
+              <!-- <strong>₦850,000</strong> -->
+            </article>
+            <article class="order-item">
+              <!-- <div class="product-image">
+                <img src="./img/IMG-20261102-WA0005.jpg" alt="" />
+              </div> -->
+              <div class="product-details">
+                <!-- <h3>Wireless Headphones</h3>
+                <p>Accessories · Qty 1</p> -->
+              </div>
+              <!-- <strong>₦75,000</strong> -->
+            </article>
+          </div>
+
+          <form class="discount-form" action="#" method="post">
+            <label class="visually-hidden" for="discount-code">Discount code</label>
+            <input id="discount-code" type="text" name="discount-code" placeholder="Discount code" />
+            <button type="submit">Apply</button>
+          </form>
+
+          <dl class="price-breakdown">
+            <div><dt>Subtotal</dt><dd>₦0</dd></div>
+            <div><dt>Delivery</dt><dd>₦0</dd></div>
+            <div><dt>Tax</dt><dd>Included</dd></div>
+            <div class="total"><dt>Total</dt><dd>₦0</dd></div>
+          </dl>
+
+          <button class="place-order" type="submit" form="checkout-form">Place order <span></span></button>
+          <p class="secure-note"><span aria-hidden="true"><i class="fa-solid fa-circle-check"></i></span> Your information is kept private and secure.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer" id="contact">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2>Tech<span>Vista</span></h2>
+          <p>Your one-stop store for computers, phones and accessories.</p>
+        </div>
+
+        <div>
+          <h3>Quick Links</h3>
+          <a href="./index-1.html">Home</a>
+          <a href="./shop.html">Shop</a>
+          <a href="./About.html">About Us</a>
+          <a href="./contact.html">Contact</a>
+           <a href="./admin/admin2.html">Admin</a>
+        </div>
+
+        <div>
+          <h3>Categories</h3>
+          <a href="./laptop.html">Computers &amp; Laptops</a>
+          <a href="./Smartphones.html">Phones &amp; Tablets</a>
+          <a href="./headphones.html">Accessories</a>
+          <a href="./shop.html#products">Best Deals</a>
+        </div>
+
+        <div class="contact-info">
+          <h3>Contact Us</h3>
+          <p><i class="fa-solid fa-envelope"></i> Email: hello@techvista.example</p>
+          <p><i class="fa-solid fa-phone"></i> Phone: +234 800 000 0000</p>
+          <p><i class="fa-solid fa-location-dot"></i> Nigeria</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 TechVista. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

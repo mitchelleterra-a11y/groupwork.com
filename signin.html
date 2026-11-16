@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101923" />
+    <title>Sign in | TechVista</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/signin.css" />
+    <link rel="stylesheet" href="./fontawesome-free-7.3.1-web/css/all.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <a href="./index-1.html" class="logo">
+        <img
+          class="logo-icon"
+          src="./img/techvista-logo-v2-dark-bg.png"
+          alt=""
+        />
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="./index-1.html">Home</a>
+        <a href="./shop.html">Shop</a>
+        <a href="./About.html">About</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-icons">
+        <a href="./shop.html" aria-label="Search">⌕</a>
+        <a href="./signin.html" aria-label="Your account">♙</a>
+        <a href="./cart3.html" aria-label="Shopping cart">🛒</a>
+      </div>
+    </header>
+
+    <main class="signin-main">
+      <section class="signin-card" aria-labelledby="signin-title">
+        <aside class="welcome-panel">
+          <p class="panel-kicker">Good to have you back</p>
+          <h1>Tech that fits your life.</h1>
+          <p class="panel-copy">Sign in to pick up where you left off.</p>
+          <ul class="benefits">
+            <li><i class="fa-solid fa-circle-check"></i> Keep track of your orders</li>
+            <li><i class="fa-solid fa-circle-check"></i> Save products for later</li>
+            <li><i class="fa-solid fa-circle-check"></i> Check out a little faster</li>
+          </ul>
+        </aside>
+
+        <div class="form-panel">
+          <div class="form-heading">
+            <p class="eyebrow">YOUR TECHVISTA ACCOUNT</p>
+            <h2 id="signin-title">Welcome back</h2>
+            <p>Sign in to your account</p>
+          </div>
+
+          <form class="signin-form" action="#" method="post">
+            <div class="field">
+              <label for="email">Email address</label>
+              <input
+                type="email"
+                placeholder="enter your email"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <div class="label-row">
+                <label for="password">Password</label>
+                <a href="#forgot-password">Forgot password?</a>
+              </div>
+              <input
+                type="password"
+                placeholder="enter your password"
+                required
+              />
+            </div>
+
+            <label class="remember-option">
+              <input type="checkbox" name="remember" />
+              <span>Remember me</span>
+            </label>
+
+            <button class="primary-button" type="submit">Sign in</button>
+          </form>
+
+          <div class="separator"><span>or continue with</span></div>
+          <div class="social-options" aria-label="Other sign-in options">
+            <button type="button" class="social-button"><i class="fa-brands fa-google"></i></button>
+            <button type="button" class="social-button"><i class="fa-brands fa-apple"></i></button>
+          </div>
+
+          <p class="register-prompt">
+            New to TechVista? <a href="./signup.html">Create an account</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2>Tech<span>Vista</span></h2>
+          <p>Your one-stop store for computers, phones and accessories.</p>
+        </div>
+
+        <div>
+          <h3>Quick Links</h3>
+          <a href="./index-1.html">Home</a>
+          <a href="./shop.html">Shop</a>
+          <a href="./About.html">About Us</a>
+          <a href="./contact.html">Contact</a>
+           <a href="./admin/admin2.html">Admin</a>
+        </div>
+
+        <div>
+          <h3>Categories</h3>
+          <a href="./laptop.html">Computers &amp; Laptops</a>
+          <a href="./Smartphones.html">Phones &amp; Tablets</a>
+          <a href="./headphones.html">Accessories</a>
+          <a href="./shop.html#products">Best Deals</a>
+        </div>
+
+        <div class="contact-info">
+          <h3>Contact Us</h3>
+          <p><i class="fa-solid fa-envelope"></i> Email: hello@techvista.example</p>
+          <p><i class="fa-solid fa-phone"></i> Phone: +234 800 000 0000</p>
+          <p><i class="fa-solid fa-location-dot"></i> Nigeria</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 TechVista. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
