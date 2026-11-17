@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/cart3.css" />
+    <link rel="stylesheet" href="./css/responsive-navigation.css" />
+    <script src="./js/responsive-navigation.js" defer></script>
   </head>
 
   <body>
@@ -18,7 +20,10 @@
         />
       </a>
 
-      <nav class="nav-links">
+      <button class="menu-toggle" type="button" aria-label="Toggle main navigation" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="menu-toggle-lines" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+      <nav class="nav-links" id="primary-navigation">
         <a href="./index.html">Home</a>
         <a href="./shop.html">Shop</a>
         <a href="./about.html">About</a>

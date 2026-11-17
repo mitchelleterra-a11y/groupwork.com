@@ -1,0 +1,224 @@
+.category-container {
+  width: 100%;
+  min-width: 0;
+}
+
+.category-container > .sidebar {
+  flex: 0 0 250px;
+  min-width: 0;
+}
+
+.category-container > .main-container {
+  flex: 1 1 0;
+  width: auto;
+  max-width: none;
+  min-width: 0;
+  margin: 5px 5px 5px 0;
+}
+
+.category-container > .main-container > section,
+.category-container > .main-container > footer {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.category-container .hero-text,
+.category-container .hero-image {
+  min-width: 0;
+}
+
+.category-container .products-heading {
+  gap: 12px;
+}
+
+.category-container .products-heading h2,
+.category-container .product-info h3 {
+  overflow-wrap: anywhere;
+}
+
+.category-container .product-info {
+  min-width: 0;
+}
+
+.category-container .cart-button {
+  min-height: 44px;
+}
+
+@media (min-width: 761px) and (max-width: 1050px) {
+  .navbar {
+    gap: 12px;
+    padding-right: 3%;
+    padding-left: 3%;
+  }
+
+  .navbar .logo-icon {
+    width: clamp(150px, 22vw, 210px);
+  }
+
+  .navbar .nav-links {
+    gap: clamp(10px, 2vw, 22px);
+  }
+
+  .navbar .nav-links a {
+    font-size: clamp(13px, 1.5vw, 16px);
+  }
+
+  .navbar .nav-icons {
+    gap: 12px;
+  }
+
+  .navbar .nav-icons a {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .category-container > .main-container .benefits {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .category-container > .main-container .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .category-container > .main-container .smartwatch-products .product-grid {
+    grid-template-columns: minmax(0, 420px);
+    justify-content: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .category-container > .main-container .hero {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    padding: 32px clamp(20px, 6vw, 48px);
+  }
+
+  .category-container > .main-container .hero-text,
+  .category-container > .main-container .hero-image {
+    width: 100%;
+  }
+
+  .category-container > .main-container .hero-image {
+    height: clamp(210px, 32vw, 280px);
+  }
+}
+
+@media (max-width: 760px) {
+  .category-container > .sidebar {
+    flex: 0 0 auto;
+  }
+
+  .category-container > .main-container {
+    margin: 0;
+    padding: 0 clamp(12px, 4vw, 24px) 25px;
+  }
+
+  .category-container > .main-container .hero {
+    min-height: 0;
+    padding: clamp(22px, 6vw, 36px);
+  }
+
+  .category-container > .main-container .hero-text h1 {
+    font-size: clamp(28px, 7vw, 40px);
+  }
+
+  .category-container > .main-container .hero-image {
+    height: clamp(190px, 56vw, 260px);
+  }
+
+  .category-container > .main-container .benefits {
+    gap: 12px;
+    padding: 16px 3%;
+  }
+
+  .category-container > .main-container .benefit {
+    justify-content: flex-start;
+    min-width: 0;
+    line-height: 1.4;
+  }
+
+  .category-container > .main-container > .products {
+    padding: 40px 0;
+  }
+
+  .category-container > .main-container .products-heading {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .category-container > .main-container .section-description {
+    overflow-wrap: anywhere;
+  }
+
+  .category-container > .main-container .product-grid {
+    gap: 16px;
+  }
+
+  .category-container > .main-container .product-card img,
+  .category-container > .main-container .product-image-placeholder,
+  .category-container > .main-container .watch-product-frame {
+    height: clamp(165px, 45vw, 210px);
+  }
+
+  .category-container > .main-container .product-info {
+    padding: 14px;
+  }
+
+  .category-container > .main-container .smartwatch-products .product-grid {
+    grid-template-columns: minmax(0, 420px);
+  }
+
+  .category-container > .main-container .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .category-container > .main-container .quick-categories {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .category-container > .main-container .quick-card {
+    min-width: 0;
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .category-container > .main-container .quick-card img {
+    flex: 0 0 40%;
+    width: 40%;
+    height: 65px;
+  }
+}
+
+@media (max-width: 480px) {
+  .category-container > .main-container .category-grid,
+  .category-container > .main-container .product-grid,
+  .category-container > .main-container .category-products .product-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .category-container > .main-container .smartwatch-products .product-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .category-container > .main-container .products-heading {
+    flex-direction: column;
+  }
+
+  .category-container > .main-container .section-heading {
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .category-container > .main-container .footer-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .category-container > .main-container .quick-categories,
+  .category-container > .main-container .benefits {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

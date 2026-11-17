@@ -8,6 +8,8 @@
     <title>TechVista Admin Dashboard</title>
 
     <link rel="stylesheet" href="../css/admin2.css">
+    <link rel="stylesheet" href="../css/responsive-navigation.css">
+    <script src="../js/responsive-navigation.js" defer></script>
 
 </head>
 
@@ -27,7 +29,11 @@
                 <p>ADMIN PANEL</p>
             </div>
 
-            <ul class="sidebar-menu">
+            <button class="menu-toggle sidebar-toggle" type="button" aria-label="Toggle admin navigation" aria-expanded="false" aria-controls="admin-navigation">
+                <span class="menu-toggle-lines" aria-hidden="true"><span></span><span></span><span></span></span>
+                <span>Menu</span>
+            </button>
+            <ul class="sidebar-menu" id="admin-navigation">
 
                 <li >
                     <a href="admin2.html">Dashboard</a>

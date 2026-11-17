@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/signin.css" />
     <link rel="stylesheet" href="./fontawesome-free-7.3.1-web/css/all.css" />
+    <link rel="stylesheet" href="./css/responsive-navigation.css" />
+    <script src="./js/responsive-navigation.js" defer></script>
   </head>
   <body>
     <header class="navbar">
@@ -19,7 +21,10 @@
         />
       </a>
 
-      <nav class="nav-links" aria-label="Main navigation">
+      <button class="menu-toggle" type="button" aria-label="Toggle main navigation" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="menu-toggle-lines" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+      <nav class="nav-links" id="primary-navigation" aria-label="Main navigation">
         <a href="./index.html">Home</a>
         <a href="./shop.html">Shop</a>
         <a href="./about.html">About</a>

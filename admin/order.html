@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechVista - Orders Management</title>
     <link rel="stylesheet" href="../css/order.css">
+    <link rel="stylesheet" href="../css/responsive-navigation.css">
+    <script src="../js/responsive-navigation.js" defer></script>
 </head>
 
 <body>
@@ -19,7 +21,11 @@
                 <p>ADMIN PANEL</p>
             </div>
 
-            <nav>
+            <button class="menu-toggle sidebar-toggle" type="button" aria-label="Toggle admin navigation" aria-expanded="false" aria-controls="admin-navigation">
+                <span class="menu-toggle-lines" aria-hidden="true"><span></span><span></span><span></span></span>
+                <span>Menu</span>
+            </button>
+            <nav id="admin-navigation">
                 <a href="./admin2.html">Dashboard</a>
                 <a href="./product.html">Add Product</a>
                 <a href="./mproduct.html">Manage Products</a>
